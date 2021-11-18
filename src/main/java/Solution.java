@@ -8,7 +8,21 @@ public class Solution {
      */
 
     public int alternatingCharacters(String s) {
-        // Write your code here
-        return 0;
+
+        // first check the chars of each string and compare to the first and next
+        int count = 0;
+
+        for (int i = 0; i < s.length() - 1; i++) {
+            if (s.charAt(i) == (s.charAt(i + 1))) {
+                count++;
+
+            }
+
+            // increment the count by 1
+
+            // print out count
+
+        }
+        return count;
     }
 }

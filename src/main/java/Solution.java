@@ -1,5 +1,4 @@
 public class Solution {
-
     /*
      * Complete the 'alternatingCharacters' function below.
      *
@@ -7,8 +6,13 @@ public class Solution {
      * The function accepts STRING s as parameter.
      */
 
-    public int alternatingCharacters(String s) {
-        // Write your code here
-        return 0;
+    public Integer alternatingCharacters(String s) {
+        Integer collection = 0;
+        for(int i = 1; i < s.length(); i++){
+            if(s.charAt(i) == s.charAt(i - 1)) {
+                collection++;
+            }
+        }
+        return collection;
     }
 }
